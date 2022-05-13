@@ -17,5 +17,8 @@ public class Note {
 
     private boolean done;
 
+    private String hashtag;
+
     private Long categoryId;
+
 }
