@@ -26,6 +26,11 @@ public class NoteServiceImpl implements NoteService{
     }
 
     @Override
+    public NoteDto createHashtag(NoteDto noteDto) {
+        return mapper.fromEntityToNoteDto(noteRepository.save(mapper.fromNoteDtoToEntity(noteDto)));
+    }
+
+    @Override
     public void deleteNote(Long id) {
         noteRepository.deleteById(id);
     }
