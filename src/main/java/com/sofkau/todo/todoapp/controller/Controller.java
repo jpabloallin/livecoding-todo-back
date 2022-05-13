@@ -41,6 +41,11 @@ public class Controller {
         return noteService.updateNote(noteDto);
     }
 
+    @PostMapping("save/hashtag")
+    public NoteDto createHashtag(@RequestBody NoteDto note) {
+        return noteService.createHashtag(note);
+    }
+
     @DeleteMapping("delete/category/{id}")
     public void deleteCategory(@PathVariable Long id){
         categoryService.deleteCategory(id);
