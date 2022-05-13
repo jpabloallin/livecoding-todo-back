@@ -15,6 +15,7 @@ public class Mapper {
         note.setCategoryId(noteDto.getCategoryId());
         note.setDone(noteDto.isDone());
         note.setMessage(noteDto.getMessage());
+        note.setHashtag(noteDto.getHashtag());
         note.setId(noteDto.getId());
         return note;
     }
@@ -24,6 +25,7 @@ public class Mapper {
         noteDto.setCategoryId(note.getCategoryId());
         noteDto.setDone(note.isDone());
         noteDto.setMessage(note.getMessage());
+        noteDto.setHashtag(note.getHashtag());
         noteDto.setId(note.getId());
         return noteDto;
     }

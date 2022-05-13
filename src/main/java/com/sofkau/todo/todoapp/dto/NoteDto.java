@@ -11,5 +11,6 @@ public class NoteDto{
     private Long id;
     private String message;
     private boolean done;
+    private String hashtag;
     private Long categoryId;
 }
