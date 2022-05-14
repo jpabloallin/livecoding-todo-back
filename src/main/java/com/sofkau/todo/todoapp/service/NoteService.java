@@ -8,7 +8,5 @@ public interface NoteService {
 
     NoteDto updateNote(NoteDto noteDto);
 
-    NoteDto createHashtag(NoteDto noteDto);
-
     void deleteNote(Long id);
 }
